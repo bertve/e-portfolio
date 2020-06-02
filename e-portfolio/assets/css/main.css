@@ -5,7 +5,8 @@
 
 	#fdlogo{
 		width: 50%;
-		margin-left: 25%;
+		margin: auto;
+		display: block;
 	}
 	#bannerLinks{
 		text-decoration: none;
@@ -59,10 +60,21 @@
 		min-height: 95vh ;
 	}
 
+	#flexsameLogo{
+		width: 75%;
+		margin: 0 auto;
+		display: block;
+	}
+
 	body{
 		min-height: 100vh;
 	}
 
+	.home_link_pics{
+		width: 12em;
+		margin: 0 auto;
+		display: block;	
+	}
 
 /* Reset */
 
