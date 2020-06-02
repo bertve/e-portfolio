@@ -6,7 +6,6 @@
 	#fdlogo{
 		width: 50%;
 		margin-left: 25%;
-
 	}
 	#bannerLinks{
 		text-decoration: none;
@@ -19,30 +18,38 @@
 
 	.switch{
 		color: white;
-		float: right;
-		border: white solid 0.25em;
+		border: white solid 0.20em;
 		border-radius: 2em;
 		padding: 0.5em 1em;
 		text-decoration: none;
 		font-weight: 400;
 		letter-spacing: 2px;
-		text-transform: uppercase;
-		
-
-
+		text-transform: uppercase;	
 	}
+
     .switch:hover{
 		background-color: rgba(100, 76, 157, 0.15);
-	}
-
-	.tits{
-		margin-bottom: 1em;
 	}
 
 	.canvas{
 		border: #6cc091 solid 0.5em;
 	}
 
+	#profilePicHome{
+		margin-bottom: 4em;
+	}
+
+	#aboutMeHeader{
+		margin-bottom: 0em;
+	}
+
+	#contactMain{
+		min-height: 95vh ;
+	}
+
+	body{
+		min-height: 100vh;
+	}
 
 
 /* Reset */
@@ -2599,13 +2606,6 @@
 			background-color: rgba(108, 192, 145, 0.15);
 		}
 
-		input[type="submit"].icon,
-		input[type="reset"].icon,
-		input[type="button"].icon,
-		button.icon,
-		.button.icon {
-			padding-left: 1.35em;
-		}
 
 			input[type="submit"].icon:before,
 			input[type="reset"].icon:before,
@@ -2738,9 +2738,12 @@
 		.subpage #header {
 			background: #6cc091;
 			top: 0;
-			height: 44px;
-			line-height: 44px;
+			height: 5vh;
 			position: fixed;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			padding-right: 2em;
 		}
 
 	#header {
@@ -2755,11 +2758,6 @@
 		width: 100%;
 		z-index: 10001;
 	}
-
-		#header .inner {
-			margin: 0 auto;
-			position: relative;
-		}
 
 		#header .logo {
 			color: #ffffff;
@@ -2809,24 +2807,21 @@
 			}
 
 				#header a.navPanelToggle .fa {
-					font-size: 1.25em;
+					font-size: 2em;
 				}
 
 				@media screen and (max-width: 980px) {
 
 					#header a.navPanelToggle {
-						display: inline-block;
+						display: flex;
+						align-items: center;
+						justify-content: flex-end;
+						padding: 0;
+						margin: 0 0 0 auto;
 					}
 
 				}
 
-			@media screen and (max-width: 736px) {
-
-				#header a {
-					padding: 0 0.5em;
-				}
-
-			}
 
 	@media screen and (max-width: 980px) {
 
@@ -2981,7 +2976,7 @@
 			border-top: 2px solid rgba(255, 255, 255, 0.2);
 			position: relative;
 			z-index: 10005;
-			padding-top: 8em;
+			padding-top: 2em;
 		}
 
 		#banner h1 {
@@ -3062,7 +3057,7 @@
 			}
 
 				#banner .inner {
-					padding-top: 6em;
+					padding-top: 2em;
 				}
 
 				#banner h1 {
@@ -3087,7 +3082,7 @@
 			}
 
 				#banner .inner {
-					padding-top: 4em;
+					padding-top: 2em;
 				}
 
 				#banner h1 {
@@ -3112,7 +3107,7 @@
 			}
 
 				#banner .inner {
-					padding-top: 3em;
+					padding-top: 2em;
 				}
 
 				#banner h1 {
@@ -3151,15 +3146,15 @@
 /* Footer */
 
 	#footer {
-		padding: 6em 0em;
 		background: #6cc091;
 		color: #fff;
 		text-align: center;
+		min-height: 8em;
+		padding: 5em 0;
 	}
 
 		#footer h3 {
 			color: #FFF;
-			margin-bottom: 2em !important;
 		}
 
 		#footer label {
@@ -3167,23 +3162,42 @@
 			color: #FFF;
 		}
 
-		#footer a{
-			
+		#footer .switch{
+			float: right;
+			margin-right: 2em;
 		}
 
+		#footer span{
+			margin-right: 1em;
+		}
+	
+	#footerContact{
+		background: #6cc091;
+		color: #fff;
+		text-align: center;
+		min-height: 95.1vh;
+	}
 
-		@media screen and (max-width: 980px) {
-
-			#footer {
-				padding: 4em 0;
-			}
-
+		#footerContact .inner{
+			height: 100%;
+			padding: 12.5% 2%;
+			overflow: hidden;
 		}
 
-		@media screen and (max-width: 736px) {
-
-			#footer {
-				padding: 3em 0;
-			}
-
+		#footerContact h3 {
+			color: #FFF;
 		}
+
+		#footerContact label {
+			text-align: left;
+			color: #FFF;
+		}
+
+		#footerContact .switch{
+			float: right;
+		}
+
+		#footerContact span{
+			margin-right: 1em;
+		}
+
