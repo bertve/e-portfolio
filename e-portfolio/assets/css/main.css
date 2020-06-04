@@ -2948,7 +2948,7 @@
 
 		#navPanel a:not(.close) {
 			border-top: solid 1px #8dcca9;
-			color: #daefe3;
+			color: white;
 			font-weight: 600;
 			display: block;
 			padding: 0.75em 0;
