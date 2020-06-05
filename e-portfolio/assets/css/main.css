@@ -2552,13 +2552,24 @@
 	}
 
 		table tbody tr {
-			border: solid 1px #dbdbdb;
+			border: solid 1px white;
 			border-left: 0;
 			border-right: 0;
 		}
 
+		table tbody tr a{
+			text-decoration: none;
+		}
+
 			table tbody tr:nth-child(2n + 1) {
-				background-color: #bbebd0;
+				background-color: #6cc091;
+				color: white;
+			}
+
+			
+			table tbody tr:nth-child(2n + 1) a{
+				text-decoration: none;
+				color: white;
 			}
 
 		table td {
@@ -2567,8 +2578,8 @@
 
 		table th {
 			color: #555;
-			font-size: 0.9em;
-			font-weight: 600;
+			font-size: 1em;
+			font-weight: 400;
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
 		}
