@@ -2536,14 +2536,9 @@
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
-		margin: 0 25%;
+		margin: 0 auto;
+		max-width: 600px;
 	}
-
-		@media screen and (max-width: 750px) {
-			.table-wrapper {
-				margin: 0 2.5%;
-			}	
-		}
 
 
 	table {
@@ -2579,7 +2574,7 @@
 		table th {
 			color: #555;
 			font-size: 1em;
-			font-weight: 400;
+			font-weight: 600;
 			padding: 0 0.75em 0.75em 0.75em;
 			text-align: left;
 		}
